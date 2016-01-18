@@ -61,6 +61,7 @@ module QuickenParser
         date_posted = text_or_nil(xmltxn, ".//DTPOSTED")
         amount      = text_or_nil(xmltxn, ".//TRNAMT")
         txnid       = text_or_nil(xmltxn, ".//FITID")
+        checknum    = text_or_nil(xmltxn, ".//CHECKNUM")
         name        = text_or_nil(xmltxn, ".//NAME")
         memo        = text_or_nil(xmltxn, ".//MEMO")
 
