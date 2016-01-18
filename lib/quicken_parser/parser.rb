@@ -66,7 +66,7 @@ module QuickenParser
         memo        = text_or_nil(xmltxn, ".//MEMO")
 
         amount_and_currency = "#{amount} #{account.currency}"
-        account.transactions << Transaction.new(:type => type, :timestamp => parse_date(date_posted), :amount => amount_and_currency.to_money, :number => txnid, :name => name, :memo => memo)
+        account.transactions << Transaction.new(:type => type, :timestamp => parse_date(date_posted), :amount => amount_and_currency.to_money, :checknum => checknum, :number => txnid, :name => name, :memo => memo)
       end
 
       account
